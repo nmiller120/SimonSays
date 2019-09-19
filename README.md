@@ -1,6 +1,6 @@
 # Simon Says
 
-Project was undertaken as an introduction to PCB design and prototyping. PCB was designed using KiCad, source code written in the Arduino IDE.
+Project was undertaken to learn the process of PCB design and prototyping. PCB was designed using KiCad, source code written in the Arduino IDE.
 
 Link To Game Being Played: https://www.youtube.com/watch?v=HIm8sEf_zMo
 
