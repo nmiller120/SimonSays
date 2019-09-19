@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name LT1302CN8-5PBF)(type Legacy)(uri ${KIPRJMOD}/LT1302CN8-5PBF.lib)(options "")(descr ""))
+  (lib (name dk_Battery-Holders-Clips-Contacts)(type Legacy)(uri C:/Users/nmiller/Documents/KiCad/digikey-kicad-library-master/digikey-symbols/dk_Battery-Holders-Clips-Contacts.lib)(options "")(descr ""))
+)

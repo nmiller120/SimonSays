@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# LT1302CN8-5PBF
+#
+DEF LT1302CN8-5PBF U 0 40 Y Y 1 L N
+F0 "U" -385 559 50 H V L BNN
+F1 "LT1302CN8-5PBF" 89 -841 50 H V L BNN
+F2 "PDIP-8_N" -250 0 50 H I L BNN
+F3 "PDIP-8 Linear Technology" -2850 0 50 H I L BNN
+F4 "LT1302CN8-5#PBF" -2850 0 50 H I L BNN
+F5 "LT1302CN8-5#PBF-ND" -2850 0 50 H I L BNN
+F6 "LT1302 - Micropower High Output Current Step-Up Adjustable and Fixed 5V DC/DC Converters" -2850 0 50 H I L BNN
+F7 "https://www.digikey.com/product-detail/en/linear-technology-analog-devices/LT1302CN8-5-PBF/LT1302CN8-5-PBF-ND/889560?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" -2850 0 50 H I L BNN
+F8 "Linear Technology/Analog" -2850 0 50 H I L BNN
+DRAW
+S -400 500 450 -600 0 0 3 N
+X GND 1 -250 -900 300 U 40 40 0 0 W
+X VC 2 0 -900 300 U 40 40 0 0 P
+X SHDN 3 750 100 300 L 40 40 0 0 P
+X FB(SENSE) 4 750 -150 300 L 40 40 0 0 P
+X IT 5 300 800 300 D 40 40 0 0 P
+X VIN 6 50 800 300 D 40 40 0 0 I
+X SW 7 -700 150 300 R 40 40 0 0 P
+X PGND 8 -700 -300 300 R 40 40 0 0 W
+ENDDRAW
+ENDDEF
+#
+#End Library
