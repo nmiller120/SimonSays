@@ -17,7 +17,8 @@ bool nextLevel = true; // flag to indicate the user beat the last level
 int bounce_time = 200; // used to reject an input that bounced 
 
 void lightColor(int select, int interval) {
-  // lights the specified color, intended to be called during simons turn to show the current expected sequence. LED and tone are activated for the given interval then deactivated for the given interval
+  // lights the specified color, intended to be called during simons turn to show the current expected sequence. 
+  // LED and tone are activated for the given interval then deactivated for the given interval
   if (select < 4) {
     digitalWrite(led[select], HIGH);
     tone(buzzer, note[select]);
@@ -27,8 +28,10 @@ void lightColor(int select, int interval) {
     delay(interval);
     }
 
-  // if we attempt to show a value that is greater than or equal to 4 we light all LEDs and play the 5th tone in the scale. This is intended to be used when showing the final score as the leds shine in 
-  // groupings of 5 to make it easier to see what score you got
+  // if we attempt to show a value that is greater than or equal to 4 we light all LEDs and play the 5th tone in the scale. 
+  // This is intended to be used when showing the final score as the leds shine in groupings of 5 to make it easier to see what 
+  // score you got.
+  
   else {
     for (int i = 0; i < 4; i ++) {digitalWrite(led[i], HIGH);}
     tone(buzzer, note[4]);
@@ -76,7 +79,8 @@ void buttonPressFeedback(int feedback){
     delay(1000);
   }
 
-  // any other feedback value means we get to continue playing. The device sounds a note and flashes the color of the button you pressed
+  // any other feedback value means we get to continue playing. The device sounds a note and flashes the color of the button 
+  // you pressed
   else {
     digitalWrite(led[feedback], HIGH);
     tone(buzzer, note[feedback]);
@@ -109,7 +113,8 @@ int inputHandler(){
 
     // ...and we still have more elements to guess this round
     else {
-      // change the expected value to the next element in the sequence and signal to the calling function that the user guessed correctly
+      // change the expected value to the next element in the sequence and signal to the calling function that the user guessed 
+      // correctly
       userStroke++;
       return 0; 
       }
@@ -161,7 +166,8 @@ void buttonPressedInterrupt3(){
 
 
 void setup(){ 
-  // runs at startup. Function initializes I/O pins, seeds our random number generator and attaches pin change interrupts on the input buttons
+  // runs at startup. Function initializes I/O pins, seeds our random number generator and attaches pin change interrupts on the 
+  // input buttons
 
   pinMode(buzzer, OUTPUT);
   for (int i = 0; i<4; i++) {
@@ -250,7 +256,8 @@ void loop(){
           nextLevel = false;
           }
       }
-      // show user the outcome of the pressed button, could just display what button was pressed, could show an error, or could show final score depending on the value of 
+      // show user the outcome of the pressed button, could just display what button was pressed, could show an error, or could 
+      // show final score depending on the value of 
       // userFeedback variable
       buttonPressFeedback(userFeedback); 
 
